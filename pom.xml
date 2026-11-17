@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.nahidglobal</groupId>
-    <artifactId>nahid-global-education</artifactId>
+    <artifactId>Campus-Europe-Client</artifactId>
     <version>1.0.0</version>
     <name>Nahid Global Education Management System</name>
     <description>Oracle-backed visa and global education consultancy management platform</description>
