@@ -1,16 +1,9 @@
-package org.example.entity;
-
-
-import java.time.LocalDateTime;
+package com.nahidglobal.entity;
 
 public record UserAccount(
-        Long userId,
-        String fullName,
+        long userId,
         String username,
         String passwordHash,
         String email,
         String accountStatus,
-        LocalDateTime createdAt,
-        LocalDateTime updatedAt
-) {
-}
+){ }
