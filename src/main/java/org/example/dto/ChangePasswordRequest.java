@@ -1,4 +1,4 @@
-package com.nahidglobal.dto;
+package org.example.dto.dto;
 
 /** Request DTO for ChangePassword operations; preserves the original JSON payload. */
 public final class ChangePasswordRequest extends RequestPayload {
