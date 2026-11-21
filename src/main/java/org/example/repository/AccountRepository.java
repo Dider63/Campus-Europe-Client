@@ -1,8 +1,8 @@
 package org.example.repository;
 
-import com.nahidglobal.exception.ResourceNotFoundException;
-import com.nahidglobal.security.CustomUserDetails;
-import com.nahidglobal.entity.UserAccount;
+import org.example.exception.ResourceNotFoundException;
+import org.example.security.CustomUserDetails;
+import org.example.entity.UserAccount;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -60,7 +60,7 @@ public class AccountRepository {
     public long roleId(String roleName) {
         List<Long> ids = jdbc.query("SELECT role_id FROM app_role WHERE role_name = ?",
                 (rs, rowNum) -> rs.getLong(1), roleName);
-        if (ids.isEmpty()) throw new com.nahidglobal.exception.BusinessException(
+        if (ids.isEmpty()) throw new org.example.exception.BusinessException(
                 "Database setup is incomplete: role " + roleName + " does not exist. " +
                 "Run database/migrate_three_roles.sql in the Oracle schema used by this application, then retry.");
         return ids.getFirst();
