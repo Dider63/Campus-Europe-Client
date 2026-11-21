@@ -1,6 +1,5 @@
-package com.nahidglobal.dto;
+package org.example.dto;
 
-/** Request DTO for ApplicationDetails operations; preserves the original JSON payload. */
 public final class ApplicationDetailsRequest extends RequestPayload {
     public String passportNumber() { return stringField("passportNumber"); }
     public String passportIssueDate() { return stringField("passportIssueDate"); }
