@@ -1,4 +1,4 @@
-package com.nahidglobal.entity;
+package org.example.entity;
 
 public record UserAccount(
         long userId,
